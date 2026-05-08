@@ -1,8 +1,0 @@
-touch mylib.c mylib.h shell.c Makefile
-nano mylib.h
-nano mylib.c
-nano shell.c
-nano Makefile
-make
-export LD_LIBRARY_PATH=.
-./shell
