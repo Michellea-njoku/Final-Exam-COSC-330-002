@@ -1,16 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
 #include "mylib.h"
 
-double add(double a, double b) {
-    return a + b;
+void reverseString(char str[]) {
+    int left = 0;
+    int right = strlen(str) - 1;
+
+    while (left < right) {
+        char temp = str[left];
+        str[left] = str[right];
+        str[right] = temp;
+        left++;
+        right--;
+    }
 }
 
 double multiply(double a, double b) {
     return a * b;
 }
 
-double divide(double a, double b) {
-    if (b == 0) {
-        return 0; // basic safety
+double findSquareRoot(double num) {
+    if (num < 0) {
+        return -1;
     }
-    return a / b;
+    return sqrt(num);
 }
