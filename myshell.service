@@ -1,0 +1,13 @@
+[Unit]
+Description=My Custom Shell Service
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/ec2-user
+ExecStart=/home/ec2-user/shell
+Environment=LD_LIBRARY_PATH=/home/ec2-user
+Restart=no
+
+[Install]
+WantedBy=multi-user.target
