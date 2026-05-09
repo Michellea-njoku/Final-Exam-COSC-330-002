@@ -1,8 +1,8 @@
 #ifndef MYLIB_H
 #define MYLIB_H
 
-double add(double a, double b);
+void reverseString(char str[]);
 double multiply(double a, double b);
-double divide(double a, double b);
+double findSquareRoot(double num);
 
 #endif
