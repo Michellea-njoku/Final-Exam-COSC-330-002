@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project demonstrates how to transfer files between two AWS EC2 instances using **TCP sockets in Python**.
+This program demonstrates how to transfer files between two AWS EC2 instances using **TCP sockets in Python**.
 
 One EC2 instance acts as the **server**, listening for incoming connections, while the second EC2 instance acts as the client, connecting to the server and sending a file.
 
