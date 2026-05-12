@@ -3,7 +3,7 @@
 
 This project demonstrates how to create and use both **static (.a)** and **shared (.so)** libraries in C.
 
-The program provides a custom Brennan-style shell interface that allows users to execute commands such as reversing a string, multiplying numbers, and finding square roots using functions stored in a reusable C library.
+The program is a custom Brennan-style shell interface that allows users to execute commands such as reversing a string, multiplying numbers, and finding square roots using functions stored in a reusable C library.
 
 ---
 
