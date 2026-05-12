@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project demonstrates communication between an EC2 instance and an Amazon S3 bucket using a C program and the AWS CLI.
+This program demonstrates communication between an EC2 instance and an Amazon S3 bucket using a C program and the AWS CLI.
 The program creates a text file containing system information, uploads the file to an S3 bucket, lists the contents of the bucket, and downloads the file back to the EC2 instance.
 
 ---
@@ -68,9 +68,3 @@ output.txt
 Downloading file from S3...
 
 Downloaded file as: downloaded_output.txt
-
----
-
-## Temporary AWS Credentials
-
-The EC2 instance obtains temporary credentials through an IAM role attached to the instance. AWS provides these credentials using the Instance Metadata Service (IMDS), allowing secure access to S3 without storing access keys in the source code.
