@@ -2,9 +2,9 @@
 
 ## Overview
 
-This project demonstrates how to use systemd to manage a custom C shell program as a background service on a Linux system or AWS EC2 instance.
+This program demonstrates the use of systemd to manage a custom C shell program as a background service on a AWS EC2 instance.
 
-The shell program from Part 1 was configured to run through a custom ```service file ```using systemd. The project shows how Linux services can be started, stopped, monitored, and managed automatically.
+The shell program from Part 1 was configured to run through a custom ```service file ```using systemd. The program also highlights how Linux services can be started, stopped, monitored, and managed automatically.
 
 ---
 
