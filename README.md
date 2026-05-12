@@ -1,4 +1,5 @@
 # EC2 to S3 Communication Program
+
 ## Overview
 
 This project demonstrates communication between an EC2 instance and an Amazon S3 bucket using a C program and the AWS CLI.
@@ -17,11 +18,13 @@ The program creates a text file containing system information, uploads the file 
 ---
 
 ## Project Structure
+
+```
 .
 ├── s3_transfer.c            # Main C program
 ├── output.txt               # Generated file uploaded to S3
 ├── downloaded_output.txt    # File downloaded from S3
-
+```
 ---
 
 ## Requirements
@@ -33,33 +36,37 @@ The program creates a text file containing system information, uploads the file 
 ---
 
 ## IAM Permissions Used
-s3:PutObject – upload files to S3
-s3:ListBucket – list bucket contents
-s3:GetObject – download files from S3
+* s3:PutObject – upload files to S3
+* s3:ListBucket – list bucket contents
+* s3:GetObject – download files from S3
 
 ---
 
 ## How to Build
 Compile the program using GCC:
-
+```
 gcc s3_transfer.c -o s3_transfer
-
+```
 ---
 
 ## How to Run
 
 Run the executable:
-
+```
 ./s3_transfer
-
+```
 ---
 
 ## Example Output
 Created file: output.txt
+
 Uploading file to S3...
+
 Listing bucket contents:
 output.txt
+
 Downloading file from S3...
+
 Downloaded file as: downloaded_output.txt
 
 ---
@@ -67,10 +74,3 @@ Downloaded file as: downloaded_output.txt
 ## Temporary AWS Credentials
 
 The EC2 instance obtains temporary credentials through an IAM role attached to the instance. AWS provides these credentials using the Instance Metadata Service (IMDS), allowing secure access to S3 without storing access keys in the source code.
-
----
-
-## Author
-
-Michelle Njoku
-COSC 330-002
